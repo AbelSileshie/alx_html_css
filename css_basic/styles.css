@@ -1,20 +1,37 @@
+/* Global styles */
 body {
-  display: flex;
-  flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex: auto;
+/* Header styles */
+header ul li.logo {
+    font-size: 2em;
 }
 
+/* Article styles */
 article {
-  flex: 2;
-  overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
 }
 
+blockquote {
+    background-color: #dbc6c6;
+    padding: 10px;
+    border: 1px solid #e8c8c8;
+    margin: 0;
+}
+
+/* Aside styles */
 aside {
-  flex: 1;
-  overflow-y: auto;
+    background-color: #d6c8c8;
+    padding: 20px;
+    border: 1px solid #e8c8c8;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
 }
