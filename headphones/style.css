@@ -5,13 +5,20 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Source Sans 3', sans-serif;
-    background-color: ;
-    
+:root {
+    box-sizing: border-box;
+    background-image: url("/images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }
 
-/* Header */
+body {
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+
 .header {
     padding: 20px 0;
     color: white;
@@ -19,7 +26,8 @@ body {
 
 .navigation {
     width: 90%;
-    margin: 0 auto;
+    background-color: inherit;
+    margin: 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,10 +55,20 @@ body {
     color: #FF4C60;
 }
 
-/* Hero Section */
 .hero {
-    background-image: url('images/headphones_hero_1.jpg');
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
+.hero2 {
+    background-image: url('images/headphones_hero_2.jpg');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -91,7 +109,6 @@ body {
     background-color: #ff6c7a;
 }
 
-/* Icon Text Section */
 .Icontexts {
     text-align: center;
     padding: 60px 20px;
@@ -108,7 +125,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Features Section */
 .features {
     display: flex;
     justify-content: space-around;
@@ -135,7 +151,6 @@ body {
     font-size: 1em;
 }
 
-/* Hero 2 */
 .hero2 {
     background-color: #1d1d1d;
     padding: 100px 0;
@@ -154,7 +169,6 @@ body {
     margin: 0 auto;
 }
 
-/* Promotion Section */
 .promotion {
     display: flex;
     justify-content: center;
@@ -184,7 +198,6 @@ body {
     margin-top: 10px;
 }
 
-/* Contact Us */
 .contact-us {
     padding: 60px 20px;
     background-color: #f8f8f8;
@@ -235,8 +248,8 @@ form button:hover {
     background-color: #ff6c7a;
 }
 
-/* Footer */
 .footer {
+    display: grid;
     background-color: #222;
     color: white;
     padding: 30px 0;
@@ -244,7 +257,7 @@ form button:hover {
 }
 
 .footer .footer-content {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
@@ -267,4 +280,115 @@ footer hr {
 
 footer p {
     font-size: 0.9em;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5rem;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.container {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.icon {
+    width: 200px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 200px;
+  text-align: center;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the layout to be more suitable for smaller screens */
+    .navigation {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero,
+    .hero2 {
+        height: 400px;
+        /* Reduce hero section height for mobile */
+    }
+
+    .Herotext h1 {
+        font-size: 2em;
+    }
+
+    .Herotext p {
+        font-size: 1em;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        /* Full width for each feature */
+    }
+
+    .promo-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-us {
+        padding: 30px 10px;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+    }
+
+    .footer .footer-content {
+        width: 100%;
+    }
+
+    .maincontainer {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        /* Display grid items in one column */
+    }
+
+    .icon {
+        width: 100%;
+        /* Full width for icons */
+    }
+
+    .text {
+        text-align: center;
+    }
 }
