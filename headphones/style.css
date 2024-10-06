@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: ;
+    
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    color: white;
+}
+
+.navigation {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #FF4C60;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/headphones_hero_1.jpg');
+
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Herotext {
+    text-align: center;
+    max-width: 700px;
+}
+
+.Herotext h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.Herotext p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.Herotext a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF4C60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Herotext a:hover {
+    background-color: #ff6c7a;
+}
+
+/* Icon Text Section */
+.Icontexts {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.Icontexts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.Icontexts p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+    width: 20%;
+}
+
+.feature img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* Hero 2 */
+.hero2 {
+    background-color: #1d1d1d;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.Herotext2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.Herotext2 p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Promotion Section */
+.promotion {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.promo-box {
+    background-color: #FF4C60;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    color: white;
+}
+
+.promo-box h2 {
+    font-size: 2em;
+}
+
+.promo-box p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Contact Us */
+.contact-us {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #FF4C60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6c7a;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.footer .logo {
+    font-size: 24px;
+}
+
+.footer .socials {
+    font-size: 1.2em;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
